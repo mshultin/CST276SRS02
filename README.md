@@ -4,20 +4,20 @@ Date Validation Strategy/Template Method
 
 Project Name(s):  
 
-    - GoFStrategy
-    - GoFTemplateMethod
-    - DateI18NEnum  
-    - DateI18N  
+    [x] - GoFStrategy
+    [x] - GoFTemplateMethod
+    [] - DateI18NEnum  
+    [] - DateI18N  
 
 
 Purposes:  
 
-    - Learn to implement the canonical GoF Template Method Pattern.  
-    - Learn to implement the canonical GoF Strategy Pattern.  
-    - Learn to modify code to use the GoF Strategy and/or Template Method Pattern.  
-    - Learn to choose the correct pattern.  
-    - Practice citations for patterns.  
-    - Learn to document code with UML class diagrams.  
+    [] - Learn to implement the canonical GoF Template Method Pattern.  
+    [x] - Learn to implement the canonical GoF Strategy Pattern.  
+    [] - Learn to modify code to use the GoF Strategy and/or Template Method Pattern.  
+    [] - Learn to choose the correct pattern.  
+    [] - Practice citations for patterns.  
+    [] - Learn to document code with UML class diagrams.  
 
 
 Motivation Scenario:  

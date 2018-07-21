@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCD3C2B4-C7D7-4FBF-846E-A115428B6EA3}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+		REPORT.md = REPORT.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoFStrategy", "GoFStrategy\GoFStrategy.vcxproj", "{58122BA5-EA93-407D-B616-51BEDBBA50B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoFTemplateMethod", "GoFTemplateMethod\GoFTemplateMethod.vcxproj", "{B88434F1-BB9C-4E86-A2ED-244491B5F900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Debug|x64.ActiveCfg = Debug|x64
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Debug|x64.Build.0 = Debug|x64
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Debug|x86.Build.0 = Debug|Win32
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Release|x64.ActiveCfg = Release|x64
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Release|x64.Build.0 = Release|x64
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Release|x86.ActiveCfg = Release|Win32
+		{58122BA5-EA93-407D-B616-51BEDBBA50B9}.Release|x86.Build.0 = Release|Win32
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Debug|x64.ActiveCfg = Debug|x64
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Debug|x64.Build.0 = Debug|x64
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Debug|x86.ActiveCfg = Debug|Win32
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Debug|x86.Build.0 = Debug|Win32
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x64.ActiveCfg = Release|x64
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x64.Build.0 = Release|x64
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x86.ActiveCfg = Release|Win32
+		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {693B5ACA-296A-498C-AAC8-2777DAFE1E3B}
+	EndGlobalSection
+EndGlobal
