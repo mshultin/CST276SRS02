@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoFStrategy", "GoFStrategy\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoFTemplateMethod", "GoFTemplateMethod\GoFTemplateMethod.vcxproj", "{B88434F1-BB9C-4E86-A2ED-244491B5F900}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Date118NEnum", "Date118NEnum\Date118NEnum.vcxproj", "{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -38,6 +40,14 @@ Global
 		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x64.Build.0 = Release|x64
 		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x86.ActiveCfg = Release|Win32
 		{B88434F1-BB9C-4E86-A2ED-244491B5F900}.Release|x86.Build.0 = Release|Win32
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Debug|x64.ActiveCfg = Debug|x64
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Debug|x64.Build.0 = Debug|x64
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Debug|x86.ActiveCfg = Debug|Win32
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Debug|x86.Build.0 = Debug|Win32
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Release|x64.ActiveCfg = Release|x64
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Release|x64.Build.0 = Release|x64
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Release|x86.ActiveCfg = Release|Win32
+		{13DB7A4E-4AA4-4CBA-B69A-932484DD09B2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
