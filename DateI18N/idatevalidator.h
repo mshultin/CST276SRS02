@@ -10,22 +10,21 @@
 
 using namespace std;
 
-class DateValidatorI18N {
+class IDateValidator
+{
 public:
 	using delimiter = char;
-	using date = string;
 	using year = string;
 	using month = string;
 	using day = string;
 
-	// Modified enum class Format for YDM
-	//enum class Format {YMD, DMY, MDY};
-	enum class Format {YMD, DMY, MDY, YDM};
-	bool validateDate(Format, date, delimiter);
+	virtual bool is_good(std::string const aDate, delimiter const aDelimiter) const = 0;
+
+protected:
+	bool isYearGood(const year) const;
+	bool isMonthGood(const month) const;
+	bool isDayGood(const day, const month, const year) const;
 
 private:
-	bool isYearGood(const year);
-	bool isMonthGood(const month);
-	bool isDayGood(const day, const month, const year);
 	static int getMaxDays(const month, const year);
 };

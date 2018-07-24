@@ -2,7 +2,7 @@
 
 #include "datevalidatorI18N.h"
 
-bool DateValidatorI18N::validateDate(Format aFormat, string aDate, delimiter aDelimiter) {
+bool DateValidatorI18N::validateDate(Format aFormat, date aDate, delimiter aDelimiter) {
 	istringstream iss{ aDate };
 	vector<string> str_vector;
 	bool dateTest{ false };
@@ -21,7 +21,7 @@ bool DateValidatorI18N::validateDate(Format aFormat, string aDate, delimiter aDe
 
 	switch (aFormat)
 	{
-	case DateValidatorI18N::Format::YMD: // 2000-12-31
+	case DateValidatorI18N::Format::YMD: // 1999-12-31
 		mDay = str_itr[2];
 		mMonth = str_itr[1];
 		mYear = str_itr[0];
@@ -31,7 +31,7 @@ bool DateValidatorI18N::validateDate(Format aFormat, string aDate, delimiter aDe
 				if (isDayGood(mDay, mMonth, mYear))
 					dateTest = true;
 		break;
-	case DateValidatorI18N::Format::DMY: // 31-12-2000
+	case DateValidatorI18N::Format::DMY: // 31-12-1999
 		mDay = str_itr[0];
 		mMonth = str_itr[1];
 		mYear = str_itr[2];
@@ -41,7 +41,7 @@ bool DateValidatorI18N::validateDate(Format aFormat, string aDate, delimiter aDe
 				if (isDayGood(mDay, mMonth, mYear))
 					dateTest = true;
 		break;
-	case DateValidatorI18N::Format::MDY: // 12-31-2000
+	case DateValidatorI18N::Format::MDY: // 12-31-1999
 		mDay = str_itr[1];
 		mMonth = str_itr[0];
 		mYear = str_itr[2];
@@ -51,6 +51,20 @@ bool DateValidatorI18N::validateDate(Format aFormat, string aDate, delimiter aDe
 				if (isDayGood(mDay, mMonth, mYear))
 					dateTest = true;
 		break;
+
+	/* New switch case for YDM */
+	case DateValidatorI18N::Format::YDM: // 1999-31-12
+		mDay = str_itr[1];
+		mMonth = str_itr[2];
+		mYear = str_itr[0];
+
+		if (isYearGood(mYear))
+			if (isMonthGood(mMonth))
+				if (isDayGood(mDay, mMonth, mYear))
+					dateTest = true;
+		break;
+	/* End new switch case */
+
 	default:
 		dateTest = false;
 		break;
@@ -92,7 +106,7 @@ int DateValidatorI18N::getMaxDays(const month aMonth, const year aYear) {
 	static constexpr array<int, 12> days{ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	int result{ days.at(mMonth) };
 	if (mMonth == 1 && mYear % 4 == 0) {
-		result = 28;
+		result = 29;
 	}
 	return result;
 }
