@@ -147,7 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="datavalidatorDMY.cpp" />
+    <ClCompile Include="datevalidatorDMY.cpp" />
     <ClCompile Include="datecontext.cpp" />
     <ClCompile Include="datevalidatorMDY.cpp" />
     <ClCompile Include="datevalidatorYDM.cpp" />

@@ -1,3 +1,5 @@
+// GoF Strategy pattern (Page: 349)
+
 #include "context.h"
 
 void Context::setStrategy(Strategy* aStrategy) {

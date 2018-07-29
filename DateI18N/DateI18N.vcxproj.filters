@@ -27,13 +27,13 @@
     <ClCompile Include="datevalidatorMDY.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="datavalidatorDMY.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="datevalidatorYMD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="datecontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datevalidatorDMY.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

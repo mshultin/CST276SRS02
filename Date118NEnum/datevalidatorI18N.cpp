@@ -2,6 +2,11 @@
 
 #include "datevalidatorI18N.h"
 
+/******************************
+validateDate
+Params: Format, date, delimiter
+Returns: bool
+******************************/
 bool DateValidatorI18N::validateDate(Format aFormat, date aDate, delimiter aDelimiter) {
 	istringstream iss{ aDate };
 	vector<string> str_vector;
@@ -72,6 +77,11 @@ bool DateValidatorI18N::validateDate(Format aFormat, date aDate, delimiter aDeli
 	return dateTest;
 }
 
+/******************************
+isYearGood
+Params: year
+Returns: bool
+******************************/
 bool DateValidatorI18N::isYearGood(const year aYear) {
 	auto mMinYear = 1901;
 	auto mMaxYear = 2100;
@@ -82,6 +92,11 @@ bool DateValidatorI18N::isYearGood(const year aYear) {
 		return false;
 }
 
+/******************************
+isMonthGood
+Params: month
+Returns: bool
+******************************/
 bool DateValidatorI18N::isMonthGood(const month aMonth) {
 	int mMonth = stoi(aMonth);
 	if (mMonth <= 12)
@@ -90,6 +105,11 @@ bool DateValidatorI18N::isMonthGood(const month aMonth) {
 		return false;
 }
 
+/******************************
+isDayGood
+Params: day, month, year
+Returns: bool
+******************************/
 bool DateValidatorI18N::isDayGood(const day aDay, const month aMonth, const year aYear) {
 	int mDayMax = getMaxDays(aMonth, aYear);
 	int mDay = stoi(aDay);
@@ -99,6 +119,11 @@ bool DateValidatorI18N::isDayGood(const day aDay, const month aMonth, const year
 		return false;
 }
 
+/******************************
+getMaxDays
+Params: month, year
+Returns: int
+******************************/
 // getMaxDays is a variation of Professor Besser's code
 int DateValidatorI18N::getMaxDays(const month aMonth, const year aYear) {
 	auto mMonth = stoi(aMonth) - 1;

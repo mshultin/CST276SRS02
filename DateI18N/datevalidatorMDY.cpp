@@ -1,5 +1,10 @@
 #include "datevalidatorMDY.h"
 
+/******************************
+is_good
+Params: string, delimiter
+Returns: bool
+******************************/
 bool DateValidatorMDY::is_good(string const aDate, const delimiter aDelimiter) const {
 	istringstream iss{ aDate };
 	vector<string> str_vector;

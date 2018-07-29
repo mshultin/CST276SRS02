@@ -1,5 +1,12 @@
+// GoF Strategy design pattern (Page: 349)
+
 #include "idatevalidator.h"
 
+/******************************
+isYearGood
+Params: year
+Returns: bool
+******************************/
 bool IDateValidator::isYearGood(const year aYear) const {
 	auto mMinYear = 1901;
 	auto mMaxYear = 2100;
@@ -10,6 +17,11 @@ bool IDateValidator::isYearGood(const year aYear) const {
 		return false;
 }
 
+/******************************
+isMonthGood
+Params: month
+Returns: bool
+******************************/
 bool IDateValidator::isMonthGood(const month aMonth) const {
 	int mMonth = stoi(aMonth);
 	if (mMonth <= 12)
@@ -18,6 +30,12 @@ bool IDateValidator::isMonthGood(const month aMonth) const {
 		return false;
 }
 
+
+/******************************
+isDayGood
+Params: day, month, year
+Returns: bool
+******************************/
 bool IDateValidator::isDayGood(const day aDay, const month aMonth, const year aYear) const {
 	int mDayMax = getMaxDays(aMonth, aYear);
 	int mDay = stoi(aDay);
@@ -27,6 +45,11 @@ bool IDateValidator::isDayGood(const day aDay, const month aMonth, const year aY
 		return false;
 }
 
+/******************************
+getMaxDays
+Params: month, year
+Returns: int
+******************************/
 // getMaxDays is a variation of Professor Besser's code
 int IDateValidator::getMaxDays(const month aMonth, const year aYear) {
 	auto mMonth = stoi(aMonth) - 1;
